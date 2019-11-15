@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<html lang="en">
 		<meta charset="UTF-8">
-		<link href="css/style.css" type="text/css" rel="stylesheet" 
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
 		<title>Geo-Search Tool</title>
 
 	</head>
 	<body>
-		<header>
+		<header class="main-header">
 			<h1>Geographical Searching tool</h1>
+			<a href="#Home">
+				<img src="images/logo.jpg" alt=" " />
+			</a>
 			<nav id="navigation">
 				<ul>
-					<li><a class="active" href="Home">Home</a></li>
+					<li><a class="active" href="#Home">Home</a></li>
 					<li><a href="map.html">World Map</a></li>
 					<li><a href="time_zone.html">Time Zones</a></li>
 					<li><a href="weather.html">Weather forecast</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<p>Search anywhere in the world for information on timezone and local weather conditions...</p>
-			<div>
-				<form>
-					
+		<main id="main">
+			<p id="paragraph">Search anywhere in the world for information on timezone and local weather conditions...</p>
+			<div class="container">
+				<form id="form">
+					<hr>
+					Country: <br />
+					<input type="text" /><br />
+					State: <br />
+					<input type="text" /> <br /><br />
+					<input type="sunmit" value="Search" />
+					<hr>
+
 				</form>
-				<div id="map-display"></div>
+				<div class="container" id="map-display"></div>
 			</div>
 		</main>
-		<aside></aside>
-		<footer></footer>
+		<aside id="aside"></aside>
+		<footer id="footer">
+			<p>Contact Information: <a href="mailto:amanda.ogbeide@yahoo.com">amanda.ogbeide@yahoo.com</a></p>
+		</footer>
 		<script src="js/script.js"></script>
 	</body>
 
